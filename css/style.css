@@ -65,13 +65,14 @@ main {
 main h1 {
   text-transform: uppercase;
   color: hsl(230deg, 29%, 20%);
-  width: 80%;
+  max-width: 85%;
   font-weight: 700;
+  font-size: 2.25rem;
 }
 main h1 + p {
   font-size: 18px;
   margin: 1.5rem 0;
-  width: 80%;
+  max-width: 70%;
   color: hsl(230deg, 11%, 40%);
 }
 main div.new {
