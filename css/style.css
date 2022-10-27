@@ -65,13 +65,14 @@ main {
 main h1 {
   text-transform: uppercase;
   color: hsl(230deg, 29%, 20%);
-  width: 80%;
+  max-width: 85%;
   font-weight: 700;
+  font-size: 2.25rem;
 }
 main h1 + p {
   font-size: 18px;
   margin: 1.5rem 0;
-  width: 80%;
+  max-width: 70%;
   color: hsl(230deg, 11%, 40%);
 }
 main div.new {
@@ -124,4 +125,30 @@ main .demo button a {
 }
 main .demo p {
   color: hsl(230deg, 11%, 40%);
+}
+
+@media only screen and (min-width: 798px) {
+  body {
+    grid-template-areas: "top top" "left right" "bottom bottom";
+  }
+  header {
+    grid-area: top;
+    margin: 0;
+  }
+  header div.overlay {
+    height: 21rem;
+  }
+  div.hero {
+    grid-area: right;
+  }
+  div.hero img {
+    max-width: 110%;
+  }
+  main {
+    grid-area: left;
+    margin: 0;
+  }
+  footer {
+    grid-area: bottom;
+  }
 }
