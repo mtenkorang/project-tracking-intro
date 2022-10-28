@@ -7,10 +7,9 @@ const navBox = document.querySelector("nav");
 burgerIcon.addEventListener("click", doShowNav);
 
 function doShowNav() {
-  //   navBox.classList.remove("hidden");
-  closeIcon.classList.remove("hidden");
-  burgerIcon.classList.add("hidden");
+  closeIcon.style.display = "block";
   navBox.style.display = "block";
+  burgerIcon.classList.add("hidden");
 }
 
 //Add click event listener to close icon
@@ -18,6 +17,6 @@ closeIcon.addEventListener("click", doShowBurger);
 
 function doShowBurger() {
   navBox.style.display = "none";
-  closeIcon.classList.add("hidden");
+  closeIcon.style.display = "none";
   burgerIcon.classList.remove("hidden");
 }
