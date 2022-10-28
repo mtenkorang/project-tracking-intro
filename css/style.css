@@ -15,7 +15,7 @@ body {
 }
 
 header {
-  height: 5rem;
+  min-height: 5rem;
   margin: 1.5rem 0;
   width: 86%;
   display: -webkit-box;
@@ -28,17 +28,12 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-header img {
-  height: 1.5rem;
-}
-header div img {
-  height: 1.2rem;
-  width: 1.6rem;
-}
-header nav {
+header nav,
+header div.close {
   display: none;
 }
 header div.overlay {
+  display: none;
   position: absolute;
   width: 50vw;
   min-height: 29rem;
@@ -48,6 +43,15 @@ header div.overlay {
   border-bottom-left-radius: 60px;
   padding-bottom: 1rem;
   z-index: -1;
+}
+
+.menusize {
+  height: 1.2rem;
+  width: 1.6rem;
+}
+
+.hidden {
+  display: none;
 }
 
 div.hero {
@@ -61,7 +65,7 @@ div.hero img {
 main {
   width: 86%;
   height: 20rem;
-  margin: 5rem 0 3.5rem 0;
+  margin: 5rem 0 2.25rem 0;
 }
 main h1 {
   text-transform: uppercase;
@@ -72,7 +76,7 @@ main h1 {
 }
 main h1 + p {
   font-size: 18px;
-  margin: 0.9em 0 0 0;
+  margin: 1.5rem 0;
   max-width: 70%;
   color: hsl(230deg, 11%, 40%);
 }
@@ -90,7 +94,7 @@ main div.new span {
 main div.new p {
   display: inline;
   font-size: 18px;
-  margin-left: 1rem;
+  margin-left: 5px;
   letter-spacing: 3px;
   color: hsl(230deg, 11%, 40%);
 }
@@ -128,28 +132,12 @@ main .demo p {
   color: hsl(230deg, 11%, 40%);
 }
 
+/*Desktop Styling*/
 @media only screen and (min-width: 798px) {
-  body {
-    grid-template-areas: "top top" "left right" "bottom bottom";
+  header .burger {
+    display: none;
   }
-  header {
-    grid-area: top;
-    margin: 0;
-  }
-  header div.overlay {
-    height: 21rem;
-  }
-  div.hero {
-    grid-area: right;
-  }
-  div.hero img {
-    max-width: 110%;
-  }
-  main {
-    grid-area: left;
-    margin: 0;
-  }
-  footer {
-    grid-area: bottom;
+  header nav {
+    display: block;
   }
 }
