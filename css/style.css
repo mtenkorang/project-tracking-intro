@@ -42,14 +42,12 @@ header div.close {
 header div.overlay {
   position: absolute;
   width: 50vw;
-  height: 80vh;
-  min-height: 60vh;
+  height: 55vh;
   min-height: 29rem;
   right: 0;
   top: 0;
   background-color: hsl(207deg, 33%, 95%);
   border-bottom-left-radius: 60px;
-  padding-bottom: 1rem;
   z-index: -1;
 }
 
