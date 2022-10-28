@@ -28,6 +28,12 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
+header img {
+  height: 2rem;
+}
+header .menusize {
+  width: 2rem;
+}
 header nav,
 header div.close {
   display: none;
@@ -43,11 +49,6 @@ header div.overlay {
   border-bottom-left-radius: 60px;
   padding-bottom: 1rem;
   z-index: -1;
-}
-
-.menusize {
-  height: 1.2rem;
-  width: 1.6rem;
 }
 
 .hidden {
