@@ -14,6 +14,17 @@ body {
   place-items: center;
 }
 
+div.overlay {
+  position: absolute;
+  width: 50vw;
+  height: 55vh;
+  right: 0;
+  top: 0;
+  background-color: hsl(207deg, 33%, 95%);
+  border-bottom-left-radius: 60px;
+  z-index: -1;
+}
+
 header {
   min-height: 5rem;
   margin: 1.5rem 0;
@@ -38,17 +49,6 @@ header .menusize {
 header nav,
 header div.close {
   display: none;
-}
-header div.overlay {
-  position: absolute;
-  width: 50vw;
-  height: 55vh;
-  min-height: 29rem;
-  right: 0;
-  top: 0;
-  background-color: hsl(207deg, 33%, 95%);
-  border-bottom-left-radius: 60px;
-  z-index: -1;
 }
 
 .hidden {
