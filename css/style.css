@@ -40,9 +40,10 @@ header div.close {
   display: none;
 }
 header div.overlay {
-  display: none;
   position: absolute;
   width: 50vw;
+  height: 80vh;
+  min-height: 60vh;
   min-height: 29rem;
   right: 0;
   top: 0;
