@@ -14,10 +14,21 @@ body {
   place-items: center;
 }
 
+div.overlay {
+  position: absolute;
+  width: 50vw;
+  height: 56vh;
+  right: 0;
+  top: 0;
+  background-color: hsl(207deg, 33%, 95%);
+  border-bottom-left-radius: 60px;
+  z-index: -1;
+}
+
 header {
-  min-height: 5rem;
+  min-height: 4rem;
   margin: 1.5rem 0;
-  width: 86%;
+  width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,17 +50,6 @@ header nav,
 header div.close {
   display: none;
 }
-header div.overlay {
-  position: absolute;
-  width: 50vw;
-  height: 55vh;
-  min-height: 29rem;
-  right: 0;
-  top: 0;
-  background-color: hsl(207deg, 33%, 95%);
-  border-bottom-left-radius: 60px;
-  z-index: -1;
-}
 
 .hidden {
   display: none;
@@ -60,13 +60,16 @@ div.hero {
 }
 div.hero img {
   display: block;
-  width: 150%;
+  width: 170%;
 }
 
 main {
-  width: 86%;
-  height: 20rem;
-  margin: 5rem 0 2.25rem 0;
+  width: 100%;
+  min-height: 22rem;
+  margin-bottom: 2.25rem;
+}
+main .content {
+  padding-left: 7%;
 }
 main h1 {
   text-transform: uppercase;
@@ -82,7 +85,7 @@ main h1 + p {
   color: hsl(230deg, 11%, 40%);
 }
 main div.new {
-  margin: 1.5rem 0;
+  margin: 3.5rem 0 1.5rem 0;
   text-transform: uppercase;
 }
 main div.new span {
@@ -112,6 +115,7 @@ main .demo {
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
+  padding-right: 10%;
 }
 main .demo a,
 main .demo p {
