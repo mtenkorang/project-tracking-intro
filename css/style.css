@@ -142,6 +142,9 @@ main .demo p {
 
 /*Desktop Styling*/
 @media only screen and (min-width: 768px) {
+  header {
+    width: 80%;
+  }
   header .burger {
     display: none;
   }
@@ -164,9 +167,14 @@ main .demo p {
   ul li {
     list-style: none;
     margin-left: 1.5rem;
+    font-weight: bold;
   }
   ul li.last {
     margin-left: 3.5rem;
+    list-style: disc;
+  }
+  ul li.last a {
+    margin-left: 2.25rem;
   }
   ul li a {
     text-decoration: none;
@@ -183,5 +191,9 @@ main .demo p {
   }
   main .content {
     width: 65vw;
+    padding-left: 10%;
+  }
+  main h1 {
+    font-size: 2.75rem;
   }
 }
