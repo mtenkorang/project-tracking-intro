@@ -87,7 +87,7 @@ main h1 {
 main h1 + p {
   font-size: 18px;
   margin: 1.5rem 0;
-  max-width: 70%;
+  max-width: 80%;
   color: hsl(230deg, 11%, 40%);
 }
 main div.new {
@@ -122,7 +122,7 @@ main .demo {
 }
 main .demo a,
 main .demo p {
-  font-size: 15px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
