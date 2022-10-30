@@ -133,6 +133,7 @@ main .demo button {
   border: 1px solid hsl(0deg, 100%, 68%);
 }
 main .demo button a {
+  font-weight: bold;
   text-decoration: none;
   color: hsl(207deg, 33%, 95%);
   font-family: "Barlow Condensed", sans-serif;
@@ -208,7 +209,6 @@ main .demo p {
     margin-bottom: 2.5rem;
   }
   main .demo button a {
-    font-weight: bold;
     font-size: 1rem;
   }
   main .demo button:hover {
