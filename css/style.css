@@ -208,12 +208,17 @@ main .demo p {
     max-width: 55%;
     margin-bottom: 2.5rem;
   }
-  main .demo button a {
-    font-size: 1rem;
-  }
   main .demo button:hover {
     cursor: pointer;
-    color: #ff5e5e;
+    -webkit-transform: scale(0.99);
+            transform: scale(0.99);
+    background-color: rgba(255, 92, 92, 0.85);
+    border: 1px solid rgba(255, 92, 92, 0.85);
+  }
+  main .demo button a {
+    font-size: 1rem;
+    -webkit-transition: all 3s ease 0;
+    transition: all 3s ease 0;
   }
   main .demo p {
     font-size: 1rem;
